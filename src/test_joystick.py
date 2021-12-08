@@ -19,4 +19,6 @@ if __name__ == "__main__":
                     ctr_action = event.value*5.
 
         test_class.input_ctr_action(ctr_action)
+        ctr_state = test_class.get_ctr_state()
+        print(ctr_state['error'])
         pygame.time.wait(1)
