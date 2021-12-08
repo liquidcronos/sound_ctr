@@ -3,7 +3,7 @@ import pygame
 import numpy as np
 
 
-class sound_game:
+class SoundGame:
     def __init__(self, set_point, ctr_interval: Tuple, initial_state=0):
         self._sample_rate = 44100
         self._amp = 4096
@@ -43,11 +43,3 @@ class sound_game:
         self.ctr_action = new_ctr_action
         self.system_update(self.ctr_action)
         self.set_sound_buffer(self.set_point, self.state)
-
-
-test_class = sound_game(0, (-100, 100), initial_state=400)
-pygame.time.wait(int(40))
-test_class.change_set_point(440)
-for i in range(80):
-    test_class.input_ctr_action(20)
-    pygame.time.wait(1)
