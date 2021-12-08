@@ -1,6 +1,8 @@
 # Sound_ctr
 
-A simple control task in which a operator has to match a frequency in his left ear with a frequency in his right ear.
-For a simple demonstration execute test_joystick.py with a connected joystick
+A simple control experiment in which a participant has to match the pitch of a sound in his left ear with a pitch in his right ear.
+Analogous control of the pitch is provided via a joystick.
 
-The software is based on pygame
+For a simple domonstration execute `test_joystick.py` with a connected joystick, to record a step response execute `record_step_response.py`.
+
+All scripts require Pygame
